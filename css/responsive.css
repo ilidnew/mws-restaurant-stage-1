@@ -4,6 +4,12 @@ nav {
   align-items: center;
 }
 
+.filter-options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 #maincontent {
 /*  display: flex;
   flex-wrap: wrap;
@@ -11,14 +17,25 @@ nav {
 
 }
 
-@media screen and (max-width: 800px) {
-
+@media screen and (max-width: 600px) {
+  .filter-options {
+    flex-direction: column;
+    height: 150px;
+  }
+  .filter-options h2 {
+    margin: 10px 0px 0px 0px;
+  }
 }
 
-@media screen and (min-width: 801px) {
-/* .maincontainer {
-   width: 800px;
-   margin-left: auto;
-   margin-right: auto;
-   }*/
+@media screen and (min-width: 700px) {
+  .filter-options {
+    display: list-item;
+    height: 100px;
+  }
+  .filter-options h2 {
+    padding: 20px 0px 0px 0px;
+  }
+  #neighborhoods-select {
+    margin: 0px 0px 0px 20px;
+  }
 }

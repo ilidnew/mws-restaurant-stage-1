@@ -17,8 +17,22 @@ nav {
   grid-auto-rows: minmax(100px, auto);
 }
 
-#restaurants-list li {
+.inside #maincontent {
+  display: flex;
+}
 
+.inside #map-container {
+  flex: 0 0 50%;
+  height: 100vh;
+  position: sticky !important; /* !important to override Gmaps inline CSS */
+  top: 0 !important;
+}
+
+.inside #info-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 600px) {
@@ -62,6 +76,22 @@ nav {
     max-width: 345px;
   }
 }
+
+@media screen and (max-width: 950px) {
+  .inside #maincontent {
+    display: inherit;
+  }
+}
+
+@media screen and (max-width: 1175px) {
+  #restaurant-img {
+    max-width: 400px;
+  }
+  .inside #map-container {
+    width: 100%;
+  }
+}
+
 
 @media screen and (max-width: 1300px) {
   #restaurants-list {

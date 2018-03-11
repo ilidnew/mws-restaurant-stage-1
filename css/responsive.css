@@ -1,6 +1,14 @@
-.maincontainer {
+nav {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#maincontent {
+/*  display: flex;
   flex-wrap: wrap;
+  position: relative;*/
+
 }
 
 @media screen and (max-width: 800px) {
@@ -8,9 +16,9 @@
 }
 
 @media screen and (min-width: 801px) {
- .maincontainer {
+/* .maincontainer {
    width: 800px;
    margin-left: auto;
    margin-right: auto;
-   }
+   }*/
 }

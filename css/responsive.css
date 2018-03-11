@@ -10,10 +10,14 @@ nav {
   align-items: center;
 }
 
-#maincontent {
-/*  display: flex;
-  flex-wrap: wrap;
-  position: relative;*/
+#restaurants-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+#restaurants-list li {
 
 }
 
@@ -36,6 +40,45 @@ nav {
     padding: 20px 0px 0px 0px;
   }
   #neighborhoods-select {
-    margin: 0px 0px 0px 20px;
+    margin: 0px 0px 0px 30px;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  #restaurants-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #restaurants-list li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  #restaurants-list .restaurant-img {
+    max-height: 260px;
+    max-width: 345px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #restaurants-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: 2fr 2fr;
+  }
+  #restaurants-list li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  #restaurants-list .restaurant-img {
+    max-height: 260px;
+    max-width: 345px;
   }
 }

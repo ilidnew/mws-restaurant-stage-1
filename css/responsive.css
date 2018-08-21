@@ -1,5 +1,4 @@
 nav {
-  display: flex;
   justify-content: space-around;
   align-items: center;
 }
@@ -58,6 +57,9 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
   #restaurants-list .restaurant-img {
     max-height: 260px;
